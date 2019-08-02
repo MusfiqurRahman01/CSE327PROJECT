@@ -7,7 +7,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Learn Within</title>
+	<title>Patient Admission Form</title>
 
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
@@ -17,13 +17,13 @@
 	<div class="container">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Sign Up</div>
+				<div class="panel-heading">Patient Admission form</div>
 				<div class="panel-body">
 					<form action="patientAdmissionFormSubmit.php" method="POST">
 						<div class="row">
 							<div class="col-md-6">
 								<div class="form-group">
-									<label for="dateOfAdmission">Date: <span style="color: red">*</span></label>
+									<label for="dateOfAdmission">Date of admission: <span style="color: red">*</span></label>
 									<input type="text" name="dateOfAdmission" class="form-control" id="dateOfAdmission" required>
 								</div>
 
@@ -55,47 +55,47 @@
 
 							<div class="col-md-6">
 								<div class="form-group">
-									<label for="profession">Interested: <span style="color: red">*</span></label>
+									<label for="profession">Profession: <span style="color: red">*</span></label>
 									<select name="profession" class="form-control" id="profession" required>
-										<option value="">interested in...</option>
-										<option value="math">math</option>
-										<option value="english">english</option>
-										<option value="bangla">bangla</option>
-										<option value="poem">poem</option>
-										<option value="music">music</option>
+										<option value="">Select Professin...</option>
+										<option value="Govt Job">Govt Job</option>
+										<option value="Private Job">Private Job</option>
+										<option value="Business">Business</option>
+										<option value="Farmer">Farmer</option>
+										<option value="Retired">Retired</option>
 										<option value="Others">Others</option>
 									</select>
 								</div>
 
 								<div class="form-group">
-									<label for="deposit">Age: <span style="color: red">*</span></label>
+									<label for="deposit">Amount Deposited: <span style="color: red">*</span></label>
 									<input type="text" name="deposit" class="form-control" id="deposit" required>
 								</div>
 
 								<div class="form-group">
-									<label for="choice">Gender: <span style="color: red">*</span></label>
+									<label for="choice">Your Choice: <span style="color: red">*</span></label>
 									<div id="choice">
-										<input type="radio" name="choice" value="male" required> male &nbsp;&nbsp;
-										<input type="radio" name="choice" value="female" required> female <br>
+										<input type="radio" name="choice" value="Ward" required> Ward &nbsp;&nbsp;
+										<input type="radio" name="choice" value="Cabin" required> Cabin <br>
 									</div>
 								</div>
-
+							
 								<hr>
 								<div class="form-group">
-									<label for="refName">Favorite color: <span style="color: red">*</span></label>
+									<label for="refName">Reference name: <span style="color: red">*</span></label>
 									<input type="text" name="refName" class="form-control" id="refName" required>
 								</div>
 
 								<div class="form-group">
-									<label for="rwPatient">Pet name: <span style="color: red">*</span></label>
+									<label for="rwPatient">Relation with patient: <span style="color: red">*</span></label>
 									<input type="text" name="rwPatient" class="form-control" id="rwPatient" required>
 								</div>
 								<br>
 								<p><b><span style="color: red">*</span> fields are required!</b></p>
 							</div>
-
+							
 							<div class="col-md-12">
-								<button type="submit" name="patientFormSubmit" class="btn btn-info btn-block">Submit</button>
+								<button type="submit" name="patientFormSubmit" class="btn btn-info btn-block">Submit Form</button>
 							</div>
 						</div>
 					</form>
@@ -103,7 +103,7 @@
 			</div>
 		</div>
 	</div>
-
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </body>
